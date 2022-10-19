@@ -140,10 +140,10 @@ function DesktopHeader({countryCode, isHome, menu, openCart, title}) {
   return (
     <header role="banner" className={styles.container}>
       <div className="flex gap-12">
-        <Link className={`font-bold`} to="/">
-          {title}
+        <Link className={`w-32 h-auto mr-auto overflow-hidden`} to="/">
+          <img src="/src/assets/rwa-logo.svg" className="object-contain w-full h-full" />
         </Link>
-        <nav className="flex gap-8">
+        <nav className="flex items-center gap-8">
           {/* Top level menu items */}
           {(menu?.items || []).map((item) => (
             <Link key={item.id} to={item.to} target={item.target}>

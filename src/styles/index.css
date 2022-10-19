@@ -63,6 +63,7 @@ shop-pay-button {
   }
 
   body {
+    font-family: 'Roboto Slab', serif;
     @apply antialiased text-primary/90 bg-contrast border-primary/10;
   }
 
